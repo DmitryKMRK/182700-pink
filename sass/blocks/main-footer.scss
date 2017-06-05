@@ -1,0 +1,26 @@
+.main-footer {
+
+}
+
+.main-footer__social-item {
+  box-sizing: border-box;
+  width: 51px;
+  height: 51px;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  &--tw {
+    background: url("../img/icon-twitter.svg") no-repeat;
+  }
+  &--fb {
+    background: url("../img/icon-facebook.svg") no-repeat;
+  }
+  &--youtube {
+    background: url("../img/icon-youtube.svg") no-repeat;
+  }
+}
+
+.main-footer__copyright {
+  font-size: 14px;
+  line-height: 18px;
+  color: #283645;
+}

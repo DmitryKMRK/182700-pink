@@ -1,0 +1,91 @@
+@mixin form-font {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+}
+
+@mixin label-font {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #d22856;
+}
+
+@mixin form-heading-font {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #d22856;
+}
+
+.main-form__username-block-input {
+  @include form-font;
+}
+
+.main-form__username-block-label {
+  @include label-font;
+}
+
+.main-form__checkbox-block-heading {
+  @include form-heading-font;
+}
+
+.main-form__checkbox-block-label {
+  @include form-font;
+}
+
+.main-form__contacts-block-label {
+  @include label-font;
+}
+
+.main-form__contacts-block-input {
+  @include form-font;
+}
+
+.main-form__radio-block-heading {
+  @include form-heading-font;
+}
+
+.main-form__radio-block-label {
+  @include form-font;
+}
+
+.main-form__textarea-block-heading {
+  @include form-heading-font;
+}
+
+.main-form__textarea-block-input {
+  @include form-font;
+}
+
+.main-form__note {
+  @include form-font;
+}
+
+.modal-form__heading {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.modal-form__description {
+  width: 268px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283645;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-form__checkbox-block {
+  background-color: #f2f2f2;
+}
+
+.main-form__radio-block {
+  background-color: #f2f2f2;
+}
