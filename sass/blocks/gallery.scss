@@ -1,7 +1,29 @@
-.gallery__item-description {
+.gallery__item {
   width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.gallery__item-featured {
+  margin-bottom: 20px;
+}
+
+.gallery__item-photo img {
+  width: 100%;
+}
+
+.gallery__item-photo-featured img {
+  width: 100%;
+}
+
+.gallery__item-description {
+  box-sizing: border-box;
+  padding: 18px 17px;
   background-color: #f2f2f2;
   margin: 0 auto;
+  &--featured {
+    width: 100%;
+  }
 }
 
 .gallery__post-author {
@@ -15,6 +37,7 @@
   font-size: 12px;
   line-height: 24px;
   color: #283645;
+  text-transform: uppercase;
 }
 
 .gallery__post {
@@ -27,4 +50,30 @@
   font-size: 12px;
   line-height: 24px;
   color: #d22856;
+  text-transform: uppercase;
+}
+
+@media(min-width: 660px) {
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery__items-list .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .gallery__item {
+    width: 300px;
+  }
+
+}
+
+@media(min-width: 1200px) {
+
+
+
 }

@@ -26,3 +26,31 @@
   color: #ffffff;
   text-decoration: none;
 }
+
+@media(min-width: 1200px) {
+
+  .page-header__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    width: 624px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+  }
+
+  .main-nav__item {
+    border: none;
+  }
+
+}

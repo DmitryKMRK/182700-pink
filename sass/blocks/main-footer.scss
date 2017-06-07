@@ -1,9 +1,18 @@
 .main-footer {
+  &--index {
+    display: none;
+  }
+}
 
+.main-footer__social {
+  width: 177px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-footer__social-item {
   box-sizing: border-box;
+  display: block;
   width: 51px;
   height: 51px;
   border: 3px solid #e9ebec;
@@ -23,4 +32,33 @@
   font-size: 14px;
   line-height: 18px;
   color: #283645;
+}
+
+@media(min-width: 660px) {
+
+  .main-footer {
+    &--index {
+      display: block;
+    }
+  }
+
+  .main-footer__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-footer__copyright {
+    font-size: 14px;
+    line-height: 18px;
+    color: #283645;
+  }
+
+}
+
+@media(min-width: 1200px) {
+
+  .main-footer__copyright {
+    font-size: 18px;
+  }
+
 }

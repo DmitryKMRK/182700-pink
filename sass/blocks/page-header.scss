@@ -1,4 +1,21 @@
+.page-header {
+  background-color: #283645;
+}
+
 .page-header__overlay {
   padding-top: 22px;
   background-color: #283645;
+  border-bottom: 1px solid #000000;
+}
+
+.page-header__logo {
+  margin-bottom: 22px;
+}
+
+@media(min-width: 1200px) {
+
+  .page-header__overlay {
+    border: none;
+  }
+
 }

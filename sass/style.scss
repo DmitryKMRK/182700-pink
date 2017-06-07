@@ -2,8 +2,9 @@
 @import "mixins.scss";
 @import "variables.scss";
 @import "global/fonts.scss";
-@import "blocks/body.scss";
+@import "global/base.scss";
 @import "blocks/btn.scss";
+@import "blocks/effect-block.scss";
 @import "blocks/color-settings-block.scss";
 @import "blocks/contacts-block.scss";
 @import "blocks/container.scss";
@@ -21,7 +22,6 @@
 @import "blocks/page-heading.scss";
 @import "blocks/page-intro.scss";
 @import "blocks/page-main.scss";
-@import "blocks/post-photo-block.scss";
 @import "blocks/rates-block.scss";
 @import "blocks/reviews-block.scss";
 @import "blocks/slider.scss";

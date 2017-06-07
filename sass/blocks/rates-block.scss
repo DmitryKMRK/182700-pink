@@ -1,23 +1,29 @@
 .rates-block {
   background-color: #f2f2f2;
+  padding-bottom: 99px;
 }
 
 .rates-block__table {
-  border: 2px solid #e5e5e5;
-}
-
-.rates-block__table-main-row {
-  background-color: #283645;
+  margin: 0 auto;
+  border-collapse: collapse;
 }
 
 .rates-block__table-heading {
+  background: #283645;
+  &--hidden {
+    background: transparent;
+  }
+}
+
+.rates-block__table-heading h4 {
+  margin: 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: #ffffff;
 }
 
-.rates-block__table-price {
+.rates-block__table-heading span {
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
@@ -25,8 +31,74 @@
 }
 
 .rates-block__table-item {
+  width: 275px;
+  height: 60px;
+  padding-left: 20px;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
   background-color: #ffffff;
+}
+
+@media(min-width: 660px) {
+
+  .rates-block {
+    padding-top: 87px;
+  }
+
+  .rates-block__table {
+    width: 620px;
+  }
+
+  .rates-block__table-item {
+    width: 153px;
+    border: 2px solid #e5e5e5;
+    padding-left: 15px;
+    font-size: 0px;
+  }
+
+  .rates-block__table-title {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .rates-block__table-heading {
+    &--hit {
+      border-left: 2px solid #e5e5e5;
+      border-right: 2px solid #e5e5e5;
+    }
+    h4 {
+      font-size: 16px;
+    }
+    span {
+      font-size: 18px;
+    }
+  }
+
+}
+
+@media(min-width: 1200px) {
+
+  .rates-block__table {
+    width: 942px;
+  }
+
+  .rates-block__table-item {
+    width: 235px;
+    padding-left: 24px;
+  }
+
+  .rates-block__table-title {
+    font-size: 18px;
+  }
+
+  .rates-block__table-heading {
+    h4 {
+      font-size: 18px;
+    }
+    span {
+      font-size: 24px;
+    }
+  }
+
 }
