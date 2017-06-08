@@ -2,10 +2,12 @@
   padding-top: 45px;
   padding-bottom: 49px;
   background: #ffffff;
+  &--form {
+    padding-bottom: 34px;
+  }
 }
 
 .page-intro__description {
-  width: 250px;
   margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
