@@ -1,21 +1,43 @@
 .page-header {
-  background-color: #283645;
+  background: #283645;
 }
 
 .page-header__overlay {
+  display: flex;
+  justify-content: space-between;
   padding-top: 22px;
-  background-color: #283645;
   border-bottom: 1px solid #000000;
 }
 
 .page-header__logo {
+  width: 75px;
+  height: 22px;
+  margin-left: 20px;
   margin-bottom: 22px;
+}
+
+.page-header__toggle {
+  width: 50px;
+  height: 24px;
+  margin-right: 20px;
+  background: url("../img/icon-menu-burger.svg");
+  background-size: 50px 24px;
+  cursor: pointer;
 }
 
 @media(min-width: 1200px) {
 
   .page-header__overlay {
     border: none;
+  }
+
+  .page-header__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__toggle {
+    display: none;
   }
 
 }

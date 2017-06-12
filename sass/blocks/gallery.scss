@@ -1,6 +1,5 @@
 .gallery__item {
   width: 280px;
-  margin: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -8,8 +7,15 @@
   margin-bottom: 20px;
 }
 
+.gallery__item-photo {
+  width: 280px;
+  height: 180px;
+}
+
 .gallery__item-photo img {
-  width: 100%;
+  object-fit: cover;
+  width: 280px;
+  height: 180px;
 }
 
 .gallery__item-photo-featured img {
@@ -17,10 +23,12 @@
 }
 
 .gallery__item-description {
+  position: relative;
   box-sizing: border-box;
   padding: 18px 17px;
   background-color: #f2f2f2;
   margin: 0 auto;
+
   &--featured {
     width: 100%;
   }
@@ -41,12 +49,27 @@
 }
 
 .gallery__post {
+  margin-bottom: 9px;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
 }
 
 .gallery__post-likes {
+  display: flex;
+  align-items: center;
+}
+
+.gallery__post-likes-icon {
+  margin-right: 19px;
+  width: 13px;
+  height: 12px;
+  margin-top: 5px;
+  background: url("../img/icon-heart.svg") no-repeat;
+  background-size: cover;
+}
+
+.gallery__post-likes-text {
   font-size: 12px;
   line-height: 24px;
   color: #d22856;
@@ -70,10 +93,69 @@
     width: 300px;
   }
 
+  .gallery__item-photo {
+    width: 300px;
+    height: 300px;
+  }
+
+  .gallery__item-photo img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .gallery__item-description {
+    display: flex;
+    flex-direction: column;
+    height: 155px;
+
+    &--featured {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  .gallery__post-likes {
+    margin-top: auto;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &--featured {
+      width: 137px;
+      margin-top: 0;
+      order: 2;
+    }
+  }
+
+  .gallery__post-info {
+
+    &--featured {
+      order: 1;
+    }
+  }
+
+  .gallery__post {
+
+    &--featured {
+      order: 3;
+    }
+  }
+
 }
 
 @media(min-width: 1200px) {
 
+  .gallery__item-photo {
+    width: 300px;
+    height: 400px;
+  }
 
+  .gallery__item-photo img {
+    object-fit: cover;
+    width: 300px;
+    height: 400px;
+  }
 
 }

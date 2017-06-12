@@ -22,11 +22,13 @@
   text-decoration: none;
   border-radius: 25px;
   text-align: center;
+
   &--active {
     margin-top: 38px;
     color: #d22856;
     border: 3px solid #d22856;
   }
+
   &--inactive {
     margin-top: 12px;
     color: #283645;
@@ -82,12 +84,6 @@
   .color-settings-block__btn {
     width: 183px;
     margin: 0;
-  }
-
-  .color-settings-block__container {
-    box-sizing: border-box;
-    width: 1200px;
-    margin: 0 auto;
   }
 
 }

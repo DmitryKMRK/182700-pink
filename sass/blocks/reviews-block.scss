@@ -1,5 +1,5 @@
 .reviews-block {
-  padding-top: 42px;
+  padding-top: 17px;
   padding-bottom: 88px;
 }
 
@@ -16,6 +16,7 @@
   &--2 {
     display: none;
   }
+
   &--3 {
     display: none;
   }
@@ -73,6 +74,10 @@
 }
 
 @media(min-width: 1200px) {
+
+  .reviews-block {
+    padding-top: 197px;
+  }
 
   .reviews-block__slider {
     display: flex;

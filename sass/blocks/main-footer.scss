@@ -1,11 +1,20 @@
 .main-footer {
+  padding-top: 65px;
+
   &--index {
     display: none;
   }
 }
 
+.main-footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .main-footer__social {
   width: 177px;
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -17,18 +26,23 @@
   height: 51px;
   border: 3px solid #e9ebec;
   border-radius: 50%;
+
   &--tw {
-    background: url("../img/icon-twitter.svg") no-repeat;
+    background: url("../img/icon-twitter.svg") center no-repeat;
   }
+
   &--fb {
-    background: url("../img/icon-facebook.svg") no-repeat;
+    background: url("../img/icon-facebook.svg") center no-repeat;
   }
+
   &--youtube {
-    background: url("../img/icon-youtube.svg") no-repeat;
+    background: url("../img/icon-youtube.svg") center no-repeat;
   }
 }
 
 .main-footer__copyright {
+  margin-top: 40px;
+  margin-bottom: 40px;
   font-size: 14px;
   line-height: 18px;
   color: #283645;
@@ -37,13 +51,15 @@
 @media(min-width: 660px) {
 
   .main-footer {
+    padding-top: 49px;
+
     &--index {
       display: block;
     }
   }
 
   .main-footer__content {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 

@@ -3,20 +3,26 @@
   padding-bottom: 1px;
 }
 
-.home-page-intro__img {
-  position: relative;
+.home-page-intro__background {
   min-height: 395px;
-  margin: 0 auto;
-  background: url("../img/bg-back-mobile@1x.jpg") center no-repeat;
+  background: #212c38 url("../img/back-desktop.jpg") center no-repeat;
   background-size: cover;
 }
 
-.home-page-intro__img img {
-  width: 256px;
-  height: 286px;
+.home-page-intro__background .container {
+  position: relative;
+  min-height: 395px;
+}
+
+.home-page-intro__img {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: -3px;
+  left: -173px;
+}
+
+.home-page-intro__img img {
+  width: 487px;
+  height: 286px;
 }
 
 .home-page-intro__markets {
@@ -28,16 +34,19 @@
 }
 
 .home-page-intro__market-item {
+
   &--ios {
     width: 50px;
     height: 56px;
     background: url("../img/logo-apple.svg") no-repeat;
   }
+
   &--android {
     width: 50px;
     height: 56px;
     background: url("../img/logo-android.svg") 0px 8px no-repeat;
   }
+
   &--windows {
     width: 50px;
     height: 56px;
@@ -98,12 +107,17 @@
     margin-top: 33px;
   }
 
-  .home-page-intro__img {
+  .home-page-intro__background {
     min-height: 618px;
   }
 
+  .home-page-intro__img {
+    bottom: -227px;
+    left: -133px;
+  }
+
   .home-page-intro__img img {
-    width: 468px;
+    width: 886px;
     height: 545px;
     left: auto;
     right: 24px;
@@ -123,6 +137,7 @@
     position: absolute;
     top: 0;
   }
+
 }
 
 @media(min-width: 1200px) {
@@ -135,6 +150,22 @@
   .home-page-intro__btn {
     width: 300px;
     font-size: 21px;
+  }
+
+  .home-page-intro__background {
+    min-height: 745px;
+  }
+
+  .home-page-intro__img {
+    bottom: -354px;
+    left: 2px;
+  }
+
+  .home-page-intro__img img {
+    width: 1052px;
+    height: 645px;
+    left: auto;
+    right: 24px;
   }
 
 }

@@ -7,10 +7,12 @@
   .effect-block {
     display: block;
     padding-top: 59px;
+    padding-bottom: 67px;
   }
 
   .effect-block__container {
     display: flex;
+    justify-content: space-between;
   }
 
   .effect-block__img {
@@ -19,9 +21,10 @@
     background: url("../img/24.png") no-repeat;
   }
 
-  .effect_block__heading {
+  .effect-block__heading {
     width: 168px;
     margin: 0;
+    margin-top: 37px;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -30,16 +33,19 @@
 
   .effect-block__description {
     width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: 24px;
     color: #283645;
   }
 
-  .effect_block__link {
+  .effect-block__link {
     font-size: 14px;
     line-height: 24px;
     color: #d22856;
   }
+
 }
 
 @media(min-width: 1200px) {
@@ -48,7 +54,7 @@
     background-color: #f2f2f2;
   }
 
-  .effect_block__heading {
+  .effect-block__heading {
     width: 300px;
     line-height: 30px;
   }
@@ -59,7 +65,7 @@
     line-height: 30px;
   }
 
-  .effect_block__link {
+  .effect-block__link {
     font-size: 18px;
     line-height: 30px;
   }
