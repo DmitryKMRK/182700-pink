@@ -1,12 +1,63 @@
 .page-intro {
+  padding-top: 45px;
+  padding-bottom: 49px;
   background: #ffffff;
+
+  &--form {
+    padding-bottom: 34px;
+  }
 }
 
 .page-intro__description {
-  width: 240px;
   margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
   text-align: center;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.page-intro__description-hidden-inline {
+  display: none;
+}
+
+@media(min-width: 660px) {
+
+  .page-intro {
+    padding-top: 92px;
+    padding-bottom: 76px;
+  }
+
+  .page-intro__description {
+    width: 440px;
+    font-size: 18px;
+
+    &--hidden {
+      display: block;
+    }
+  }
+
+}
+
+@media(min-width: 1200px) {
+
+  .page-intro {
+    padding-bottom: 88px;
+  }
+
+  .page-intro__description {
+    width: 580px;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  .page-intro__description-hidden-inline {
+    display: inline;
+  }
+
 }

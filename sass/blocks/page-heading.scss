@@ -1,9 +1,8 @@
 .page-heading {
-  width: 320px;
-  margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 84px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-size: cover;
 }
 
 .page-heading h1 {
@@ -13,4 +12,29 @@
   font-weight: 300;
   color: #ffffff;
   text-align: center;
+}
+
+.page-heading--form h1 {
+  width: 230px;
+}
+
+@media(min-width: 660px) {
+
+  .page-heading h1 {
+    width: 350px;
+    font-size: 50px;
+  }
+
+  .page-heading--form h1 {
+    width: 475px;
+  }
+
+}
+
+@media(min-width: 1200px) {
+
+  .page-heading--form h1 {
+    width: 750px;
+  }
+
 }

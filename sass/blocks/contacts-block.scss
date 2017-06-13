@@ -1,5 +1,10 @@
+.contacts-block {
+  padding-top: 40px;
+}
+
 .contacts-block__description {
   margin: 0 auto;
+  margin-bottom: 37px;
   font-size: 24px;
   font-weight: 300;
   color: #283645;
@@ -9,9 +14,11 @@
 .contacts-block__item {
   width: 240px;
   margin: 0 auto;
+  margin-top: 23px;
 }
 
 .contacts-block__item-heading {
+  margin: 0 auto;
   font-size: 18px;
   font-weight: 700;
   color: #283645;
@@ -19,8 +26,38 @@
 }
 
 .contacts-block__item-content {
+  margin: 0 auto;
+  margin-top: 3px;
   font-size: 24px;
   font-weight: 300;
   color: #d22856;
   text-align: center;
+}
+
+@media(min-width: 660px) {
+
+  .contacts-block {
+    padding-top: 47px;
+  }
+
+  .contacts-block__description {
+    width: 370px;
+    font-size: 40px;
+  }
+
+  .contacts-block__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+}
+
+@media(min-width: 1200px) {
+
+  .contacts-block__description {
+    width: 465px;
+    font-size: 50px;
+  }
+
 }

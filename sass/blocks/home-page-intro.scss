@@ -1,56 +1,171 @@
 .home-page-intro {
   background: #1d2631;
+  padding-bottom: 1px;
+}
+
+.home-page-intro__background {
+  min-height: 395px;
+  background: #212c38 url("../img/back-desktop.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.home-page-intro__background .container {
+  position: relative;
+  min-height: 395px;
 }
 
 .home-page-intro__img {
-  margin: 0 auto;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  position: absolute;
+  bottom: -3px;
+  left: -173px;
+}
+
+.home-page-intro__img img {
+  width: 487px;
+  height: 286px;
 }
 
 .home-page-intro__markets {
+  margin: 0 auto;
+  margin-top: 32px;
   display: flex;
   justify-content: space-between;
   width: 205px;
 }
 
 .home-page-intro__market-item {
+
   &--ios {
     width: 50px;
     height: 56px;
     background: url("../img/logo-apple.svg") no-repeat;
   }
+
   &--android {
     width: 50px;
     height: 56px;
-    background: url("../img/logo-android.svg") no-repeat;
+    background: url("../img/logo-android.svg") 0px 8px no-repeat;
   }
+
   &--windows {
     width: 50px;
     height: 56px;
-    background: url("../img/logo-microsoft.svg") no-repeat;
+    background: url("../img/logo-microsoft.svg") 0px 12px no-repeat;
   }
+}
+
+.home-page-intro__heading {
+  display: none;
+  margin: 0 auto;
+  font-size: 40px;
+  font-weight: 300;
+  color: #ffffff;
+  width: 186px;
+  margin-top: 93px;
+  text-align: center;
 }
 
 .home-page-intro__btn {
   width: 280px;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  margin: 0 auto;
+  margin-top: 28px;
+  padding-top: 14px;
+  padding-bottom: 17px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
   border: 3px solid #ffffff;
-  border-radius: 25px;
+  border-radius: 30px;
   text-align: center;
 }
 
 .home-page-intro__description {
   width: 230px;
   margin: 0 auto;
+  margin-top: 22px;
+  margin-bottom: 30px;
   text-align: center;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
   color: #ffffff;
+}
+
+@media(min-width: 660px) {
+
+  .home-page-intro {
+    position: relative;
+  }
+
+  .home-page-intro__heading {
+    display: block;
+  }
+
+  .home-page-intro__btn {
+    margin-top: 33px;
+  }
+
+  .home-page-intro__background {
+    min-height: 618px;
+  }
+
+  .home-page-intro__img {
+    bottom: -227px;
+    left: -133px;
+  }
+
+  .home-page-intro__img img {
+    width: 886px;
+    height: 545px;
+    left: auto;
+    right: 24px;
+  }
+
+  .home-page-intro__markets {
+    margin-top: 46px;
+  }
+
+  .home-page-intro__description {
+    width: 295px;
+    margin-top: 38px;
+    font-size: 18px;
+  }
+
+  .home-page-intro__content {
+    position: absolute;
+    top: 0;
+  }
+
+}
+
+@media(min-width: 1200px) {
+
+  .home-page-intro__heading {
+    width: 232px;
+    font-size: 50px;
+  }
+
+  .home-page-intro__btn {
+    width: 300px;
+    font-size: 21px;
+  }
+
+  .home-page-intro__background {
+    min-height: 745px;
+  }
+
+  .home-page-intro__img {
+    bottom: -354px;
+    left: 2px;
+  }
+
+  .home-page-intro__img img {
+    width: 1052px;
+    height: 645px;
+    left: auto;
+    right: 24px;
+  }
+
 }
