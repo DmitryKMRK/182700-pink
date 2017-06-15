@@ -1,5 +1,6 @@
 .contacts-block {
-  padding-top: 40px;
+  padding-top: 43px;
+  padding-bottom: 39px;
 }
 
 .contacts-block__description {
@@ -14,7 +15,14 @@
 .contacts-block__item {
   width: 240px;
   margin: 0 auto;
-  margin-top: 23px;
+  margin-top: 24px;
+
+  &--3 {
+    margin-top: 27px;
+    .contacts-block__item-heading {
+      margin-bottom: 6px;
+    }
+  }
 }
 
 .contacts-block__item-heading {
@@ -32,16 +40,32 @@
   font-weight: 300;
   color: #d22856;
   text-align: center;
+
+  &--mail {
+    cursor: pointer;
+  }
+
+  &--mail:hover {
+    color: #283645;
+    border-bottom: 2px solid #283645;
+  }
+
+  &--mail:active {
+    border: none;
+    opacity: 0.3;
+  }
 }
 
 @media(min-width: 660px) {
 
   .contacts-block {
-    padding-top: 47px;
+    padding-top: 48px;
+    padding-bottom: 29px;
   }
 
   .contacts-block__description {
     width: 370px;
+    margin-bottom: 22px;
     font-size: 40px;
   }
 
@@ -51,13 +75,42 @@
     justify-content: space-around;
   }
 
+  .contacts-block__item {
+
+    &--3 {
+      margin-top: 48px;
+    }
+  }
+
 }
 
 @media(min-width: 1200px) {
 
+  .contacts-block {
+    padding-top: 63px;
+    padding-bottom: 22px;
+  }
+
   .contacts-block__description {
     width: 465px;
+    margin-bottom: 36px;
     font-size: 50px;
+  }
+
+  .contacts-block__item {
+
+    &--1 {
+      order: 1;
+    }
+
+    &--2 {
+      order: 3;
+    }
+
+    &--3 {
+      margin-top: 24px;
+      order: 2;
+    }
   }
 
 }

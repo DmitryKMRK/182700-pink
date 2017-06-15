@@ -2,11 +2,14 @@
   background: #283645;
 }
 
+.page-header__content {
+  position: relative;
+}
+
 .page-header__overlay {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-top: 22px;
-  border-bottom: 1px solid #000000;
 }
 
 .page-header__logo {
@@ -16,28 +19,34 @@
   margin-bottom: 22px;
 }
 
-.page-header__toggle {
-  width: 50px;
-  height: 24px;
-  margin-right: 20px;
-  background: url("../img/icon-menu-burger.svg");
-  background-size: 50px 24px;
-  cursor: pointer;
+@media(min-width: 660px) {
+
+  .page-header__overlay {
+    min-height: 84px;
+    padding-top: 27px;
+  }
+
 }
 
 @media(min-width: 1200px) {
 
-  .page-header__overlay {
-    border: none;
+  .page-header {
+    background: rgba(40, 54, 69, 0.3);
+  }
+
+  .page-header__container {
+    position: relative;
+  }
+
+  .page-header__content {
+    position: absolute;
+    top: 0;
+    z-index: 3;
   }
 
   .page-header__content {
     display: flex;
     justify-content: space-between;
-  }
-
-  .page-header__toggle {
-    display: none;
   }
 
 }

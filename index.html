@@ -20,11 +20,11 @@
                 </g>
               </svg>
             </div>
-            <div class="page-header__toggle"></div>
           </div>
-          <nav class="main-nav">
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
             <ul class="main-nav__list">
-              <li class="main-nav__item"><a>Главная</a></li>
+              <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
               <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
               <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
               <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
@@ -33,7 +33,6 @@
         </div>
       </div>
     </header>
-
 
     <main class="page-main">
       <div class="home-page-intro">
@@ -187,15 +186,15 @@
         <div class="container">
           <p class="contacts-block__description">Остались вопросы? Свяжитесь с нами!</p>
           <div class="contacts-block__content">
-            <div class="contacts-block__item">
+            <div class="contacts-block__item contacts-block__item--1">
               <h5 class="contacts-block__item-heading">Звоните:</h5>
               <p class="contacts-block__item-content">+7 (812) 555-66-66</span>
             </div>
-            <div class="contacts-block__item">
+            <div class="contacts-block__item contacts-block__item--2">
               <h5 class="contacts-block__item-heading">Пишите:</h5>
-              <p class="contacts-block__item-content">mail@htmlacademy.ru</span>
+              <p class="contacts-block__item-content contacts-block__item-content--mail">mail@htmlacademy.ru</span>
             </div>
-            <div class="contacts-block__item">
+            <div class="contacts-block__item contacts-block__item--3">
               <h5 class="contacts-block__item-heading">Приезжайте в гости:</h5>
               <p class="contacts-block__item-content">ул. Большая Конюшенная, 19/8</span>
             </div>
@@ -203,7 +202,9 @@
         </div>
       </div>
 
-      <div class="map-block"></div>
+      <div class="map-block">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A91d9cd43fb0832305f464646164b56599fdc4c0bf965bc1e7b6986110bfe18ed&amp;width=100%25&amp;height=100%&amp;lang=ru_UA&amp;scroll=true"></script>
+      </div>
     </main>
 
     <footer class="main-footer main-footer--index">
@@ -235,5 +236,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/scripts.js"></script>
   </body>
 </html>

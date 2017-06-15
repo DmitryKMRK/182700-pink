@@ -1,4 +1,5 @@
 .rates-block {
+  padding-top: 66px;
   background-color: #f2f2f2;
   padding-bottom: 99px;
 }
@@ -13,6 +14,20 @@
 
   &--hidden {
     background: transparent;
+  }
+
+  &--hit {
+    position: relative;
+  }
+
+  &--hit::after {
+    content: "";
+    width: 73px;
+    height: 73px;
+    background: url("../img/hit.png") no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -49,7 +64,7 @@
     position: absolute;
     right: 17px;
     top: 20px;
-    background: url("../img/icon-yes.svg") no-repeat;
+    background: url("../img/yes.png") no-repeat;
     background-size: 31px 21px;
   }
 
@@ -60,7 +75,7 @@
     position: absolute;
     right: 19px;
     top: 15px;
-    background: url("../img/icon-no.svg") no-repeat;
+    background: url("../img/no.png") no-repeat;
     background-size: 27px 26px;
   }
 }
@@ -68,7 +83,8 @@
 @media(min-width: 660px) {
 
   .rates-block {
-    padding-top: 87px;
+    padding-top: 88px;
+    padding-bottom: 68px;
   }
 
   .rates-block__table {
@@ -99,6 +115,8 @@
   }
 
   .rates-block__table-heading {
+    padding-top: 11px;
+    padding-bottom: 11px;
 
     &--hit {
       border-left: 2px solid #e5e5e5;
@@ -106,7 +124,9 @@
     }
 
     h4 {
+      margin-bottom: -1px;
       font-size: 16px;
+      text-transform: uppercase;
     }
 
     span {
@@ -117,6 +137,11 @@
 }
 
 @media(min-width: 1200px) {
+
+  .rates-block {
+    padding-top: 147px;
+    padding-bottom: 95px;
+  }
 
   .rates-block__table {
     width: 942px;
@@ -143,6 +168,8 @@
   }
 
   .rates-block__table-heading {
+    padding-top: 17px;
+    padding-bottom: 19px;
 
     h4 {
       font-size: 18px;

@@ -22,13 +22,13 @@
                 </svg>
               </a>
             </div>
-            <div class="page-header__toggle"></div>
           </div>
-          <nav class="main-nav">
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
             <ul class="main-nav__list">
               <li class="main-nav__item"><a href="index.html">Главная</a></li>
               <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-              <li class="main-nav__item"><a>Конкурс</a></li>
+              <li class="main-nav__item main-nav__item--active"><a>Конкурс</a></li>
               <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
             </ul>
           </nav>
@@ -43,7 +43,7 @@
 
       <div class="page-intro page-intro--form">
         <div class="container">
-          <p class="page-intro__description">
+          <p class="page-intro__description page-intro__description--form">
             Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! <span class="page-intro__description-hidden-inline">Пожалуйста, заполните форму ниже:</span>
           </p>
           <p class="page-intro__description page-intro__description--hidden">
@@ -142,9 +142,9 @@
 
         <div class="main-form__block main-form__block--textarea">
           <div class="container">
+            <h2 class="main-form__heading main-form__heading--textarea">Опишите свои эмоции</h2>
             <div class="main-form__content main-form__content--textarea">
               <div class="main-form__item main-form__item--textarea">
-                <h2 class="main-form__heading main-form__heading--textarea">Опишите свои эмоции</h2>
                 <textarea class="main-form__input main-form__input--textarea" name="review" id="review-textarea">Можно прям в красках, не стесняясь в выражениях</textarea>
               </div>
             </div>
@@ -189,7 +189,7 @@
       </div>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer main-footer--form">
       <div class="container">
         <div class="main-footer__content">
           <div class="main-footer__logo">
@@ -218,5 +218,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/scripts.js"></script>
   </body>
 </html>

@@ -7,7 +7,7 @@
   .effect-block {
     display: block;
     padding-top: 59px;
-    padding-bottom: 67px;
+    padding-bottom: 43px;
   }
 
   .effect-block__container {
@@ -19,6 +19,7 @@
     width: 238px;
     height: 276px;
     background: url("../img/24.png") no-repeat;
+    background-size: cover;
   }
 
   .effect-block__heading {
@@ -51,16 +52,28 @@
 @media(min-width: 1200px) {
 
   .effect-block {
+    padding-top: 31px;
+    padding-bottom: 68px;
     background-color: #f2f2f2;
   }
 
+  .effect-block__img {
+    width: 298px;
+    height: 345px;
+    background: url("../img/24.png") no-repeat;
+    background-size: cover;
+  }
+
   .effect-block__heading {
+    margin-top: 93px;
     width: 300px;
     line-height: 30px;
   }
 
   .effect-block__description {
     width: 530px;
+    margin-top: 25px;
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
   }
