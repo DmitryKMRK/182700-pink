@@ -6,9 +6,15 @@
   &--form {
     padding-bottom: 34px;
   }
+
+  &--2 {
+    padding-top: 19px;
+    padding-bottom: 42px;
+  }
 }
 
 .page-intro__description {
+  width: 245px;
   margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
@@ -17,6 +23,10 @@
 
   &--hidden {
     display: none;
+  }
+
+  &--form {
+    width: 100%;
   }
 }
 
@@ -29,6 +39,16 @@
   .page-intro {
     padding-top: 92px;
     padding-bottom: 76px;
+
+    &--2 {
+      padding-top: 46px;
+      padding-bottom: 68px;
+    }
+
+    &--form {
+      padding-top: 93px;
+      padding-bottom: 65px;
+    }
   }
 
   .page-intro__description {
@@ -38,6 +58,10 @@
     &--hidden {
       display: block;
     }
+
+    &--form {
+      width: 490px;
+    }
   }
 
 }
@@ -45,7 +69,17 @@
 @media(min-width: 1200px) {
 
   .page-intro {
-    padding-bottom: 88px;
+    padding-top: 94px;
+    padding-bottom: 87px;
+
+    &--2 {
+      padding-top: 5px;
+      padding-bottom: 64px;
+    }
+
+    &--form {
+      padding-bottom: 58px;
+    }
   }
 
   .page-intro__description {
@@ -53,6 +87,10 @@
 
     &--hidden {
       display: none;
+    }
+
+    &--form {
+      width: 760px;
     }
   }
 

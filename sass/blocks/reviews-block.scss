@@ -1,6 +1,6 @@
 .reviews-block {
-  padding-top: 17px;
-  padding-bottom: 88px;
+  padding-top: 42px;
+  padding-bottom: 112px;
 }
 
 .reviews-block__slider-arrow {
@@ -8,6 +8,7 @@
 }
 
 .reviews-block__slider-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 276px;
@@ -46,6 +47,10 @@
 
 @media(min-width: 660px) {
 
+  .reviews-block {
+    padding-bottom: 67px;
+  }
+
   .reviews-block__slider-item {
     width: 620px;
   }
@@ -76,7 +81,8 @@
 @media(min-width: 1200px) {
 
   .reviews-block {
-    padding-top: 197px;
+    padding-top: 173px;
+    padding-bottom: 41px;
   }
 
   .reviews-block__slider {
@@ -86,13 +92,32 @@
 
   .reviews-block__slider-arrow {
     display: block;
-    width: 22px;
+    width: 25px;
     height: 41px;
+    margin-top: 40px;
     cursor: pointer;
+
+    &--prev {
+      background: url("../img/left-arrow.png") no-repeat;
+    }
+
+    &--next {
+      background: url("../img/right-arrow.png") no-repeat;
+    }
   }
 
   .reviews-block__slider-item {
     width: 942px;
+  }
+
+  .reviews-block__slider-item::before {
+    content: "";
+    width: 79px;
+    height: 63px;
+    position: absolute;
+    top: -102px;
+    left: 411px;
+    background: url("../img/quotes.png") no-repeat;
   }
 
   .reviews-block__slider-heading {
@@ -105,6 +130,10 @@
 
   .reviews-block__slider-description {
     width: 680px;
+  }
+
+  .reviews-block__slider-description-quotes {
+    display: none;
   }
 
 }

@@ -1,8 +1,10 @@
 .page-heading {
-  padding-top: 30px;
-  padding-bottom: 84px;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  background-size: cover;
+  padding-top: 31px;
+  padding-bottom: 85px;
+
+  &--form {
+    padding-bottom: 58px;
+  }
 }
 
 .page-heading h1 {
@@ -20,6 +22,15 @@
 
 @media(min-width: 660px) {
 
+  .page-heading {
+    padding-top: 72px;
+    padding-bottom: 143px;
+
+    &--form {
+      padding-bottom: 86px;
+    }
+  }
+
   .page-heading h1 {
     width: 350px;
     font-size: 50px;
@@ -32,6 +43,11 @@
 }
 
 @media(min-width: 1200px) {
+
+  .page-heading {
+    padding-top: 64px;
+    padding-bottom: 104px;
+  }
 
   .page-heading--form h1 {
     width: 750px;

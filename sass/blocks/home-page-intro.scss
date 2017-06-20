@@ -1,4 +1,4 @@
-.home-page-intro {
+/*.home-page-intro {
   background: #1d2631;
   padding-bottom: 1px;
 }
@@ -69,8 +69,8 @@
   width: 280px;
   margin: 0 auto;
   margin-top: 28px;
-  padding-top: 14px;
-  padding-bottom: 17px;
+  padding-top: 13px;
+  padding-bottom: 16px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -81,11 +81,20 @@
   text-align: center;
 }
 
+.home-page-intro__btn:hover {
+  color: #d22856;
+  background-color: #ffffff;
+}
+
+.home-page-intro__btn:active {
+  color: rgba(210, 40, 86, 0.3);
+}
+
 .home-page-intro__description {
   width: 230px;
   margin: 0 auto;
-  margin-top: 22px;
-  margin-bottom: 30px;
+  margin-top: 23px;
+  margin-bottom: 29px;
   text-align: center;
   font-size: 14px;
   line-height: 24px;
@@ -112,7 +121,7 @@
   }
 
   .home-page-intro__img {
-    bottom: -227px;
+    bottom: -228px;
     left: -133px;
   }
 
@@ -129,7 +138,7 @@
 
   .home-page-intro__description {
     width: 295px;
-    margin-top: 38px;
+    margin-top: 37px;
     font-size: 18px;
   }
 
@@ -144,11 +153,13 @@
 
   .home-page-intro__heading {
     width: 232px;
+    margin-top: 109px;
     font-size: 50px;
   }
 
   .home-page-intro__btn {
     width: 300px;
+    margin-top: 53px;
     font-size: 21px;
   }
 
@@ -157,7 +168,7 @@
   }
 
   .home-page-intro__img {
-    bottom: -354px;
+    bottom: -355px;
     left: 2px;
   }
 
@@ -168,4 +179,13 @@
     right: 24px;
   }
 
+  .home-page-intro__markets {
+    margin-top: 65px;
+  }
+
+  .home-page-intro__description {
+    margin-top: 55px;
+  }
+
 }
+*/
