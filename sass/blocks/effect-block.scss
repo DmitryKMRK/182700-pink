@@ -22,6 +22,10 @@
     background-size: cover;
   }
 
+  .effect-block__content {
+    margin-right: 11px;
+  }
+
   .effect-block__heading {
     width: 168px;
     margin: 0;
@@ -53,7 +57,7 @@
 
   .effect-block {
     padding-top: 31px;
-    padding-bottom: 68px;
+    padding-bottom: 66px;
     background-color: #f2f2f2;
   }
 
@@ -62,6 +66,10 @@
     height: 345px;
     background: url("../img/24.png") no-repeat;
     background-size: cover;
+  }
+
+  .effect-block__content {
+    margin-right: 44px;
   }
 
   .effect-block__heading {

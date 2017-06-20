@@ -1,5 +1,5 @@
 .page-intro {
-  padding-top: 44px;
+  padding-top: 45px;
   padding-bottom: 49px;
   background: #ffffff;
 
@@ -73,8 +73,12 @@
     padding-bottom: 87px;
 
     &--2 {
-      padding-top: 9px;
+      padding-top: 5px;
       padding-bottom: 64px;
+    }
+
+    &--form {
+      padding-bottom: 58px;
     }
   }
 

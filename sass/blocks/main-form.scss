@@ -33,10 +33,12 @@
   position: relative;
 
   &--username {
-    padding-bottom: 24px;
+    padding-bottom: 25px;
   }
 
   &--checkbox {
+    box-sizing: border-box;
+    height: 604px;
     padding-top: 38px;
     background-color: #f2f2f2;
   }
@@ -48,13 +50,13 @@
 
   &--radio {
     padding-top: 38px;
-    padding-bottom: 6px;
+    padding-bottom: 2px;
     background-color: #f2f2f2;
   }
 
   &--textarea {
     padding-top: 38px;
-    padding-bottom: 42px;
+    padding-bottom: 44px;
     margin-bottom: 1px;
   }
 
@@ -177,6 +179,11 @@
 
   &--button {
     color: #283645;
+    margin-left: 48px;
+  }
+
+  &--hidden {
+    display: none;
   }
 }
 
@@ -310,6 +317,7 @@ button.main-form__btn {
     }
 
     &--checkbox {
+      height: 553px;
       padding-top: 57px;
       margin-top: 65px;
       background-color: #ffffff;
@@ -318,15 +326,16 @@ button.main-form__btn {
     }
 
     &--contacts {
-      padding-top: 39px;
-      padding-bottom: 9px;
+      padding-top: 40px;
+      padding-bottom: 2px;
       margin-top: 65px;
       border: 2px solid #e5e5e5;
       order: 3;
     }
 
     &--radio {
-      margin-top: 18px;
+      margin-top: 19px;
+      padding-bottom: 12px;
       background-color: #ffffff;
       border: 2px solid #e5e5e5;
       order: 2;
@@ -340,7 +349,7 @@ button.main-form__btn {
     }
 
     &--button {
-      margin-top: 67px;
+      margin-top: 69px;
       order: 6;
     }
   }
@@ -356,8 +365,8 @@ button.main-form__btn {
 
     &--radio {
       position: absolute;
-      top: -9px;
-      left: 126px;
+      top: -10px;
+      left: 124px;
       background: #ffffff;
       padding-left: 25px;
       padding-right: 25px;
@@ -366,8 +375,8 @@ button.main-form__btn {
     &--contacts {
       display: block;
       position: absolute;
-      top: -9px;
-      left: 180px;
+      top: -10px;
+      left: 183px;
       background: #ffffff;
       padding-left: 25px;
       padding-right: 25px;
@@ -376,8 +385,8 @@ button.main-form__btn {
     &--checkbox {
       position: absolute;
       width: 373px;
-      top: -9px;
-      left: 92px;
+      top: -10px;
+      left: 95px;
       background: #ffffff;
       padding-left: 25px;
       padding-right: 25px;
@@ -385,8 +394,8 @@ button.main-form__btn {
 
     &--textarea {
       position: absolute;
-      top: -9px;
-      left: 180px;
+      top: -10px;
+      left: 191px;
       background: #ffffff;
       padding-left: 25px;
       padding-right: 25px;
@@ -407,6 +416,7 @@ button.main-form__btn {
     &--contacts {
       display: flex;
       flex-direction: column-reverse;
+      margin-bottom: 24px;
     }
 
     &--button {
@@ -438,16 +448,19 @@ button.main-form__btn {
   .main-form__label {
 
     &--username {
-      margin-right: 15px;
+      margin-top: 8px;
+      margin-right: 18px;
       margin-left: 0px;
     }
 
     &--contacts {
       position: relative;
+      margin-left: 19px;
     }
   }
 
   .main-form__btn {
+    width: 300px;
     margin-bottom: 0;
   }
 
@@ -459,7 +472,7 @@ button.main-form__btn {
     background: #e5e5e5 url("../img/form-tel-icon.png") 18px 22px no-repeat;
     position: absolute;
     top: -73px;
-    left: 417px;
+    left: 420px;
   }
 
   .main-form__label--email::after {
@@ -470,7 +483,7 @@ button.main-form__btn {
     background: #e5e5e5 url("../img/form-email-icon.png") 19px 25px no-repeat;
     position: absolute;
     top: -73px;
-    left: 417px;
+    left: 420px;
   }
 
   .main-form__block--checkbox input[type="checkbox"] + label {
@@ -497,7 +510,7 @@ button.main-form__btn {
 
     &--username {
       width: 435px;
-      margin-top: -9px;
+      padding-top: 3px;
       .container {
         width: 435px;
       }
@@ -505,8 +518,10 @@ button.main-form__btn {
 
     &--radio {
       width: 435px;
-      margin-top: -65px;
-      padding-bottom: 22px;
+      margin-bottom: 65px;
+      padding-top: 40px;
+      padding-bottom: 12px;
+      padding-left: 16px;
       .container {
         width: 435px;
       }
@@ -514,7 +529,9 @@ button.main-form__btn {
 
     &--contacts {
       width: 940px;
-      margin-top: 15px;
+      margin-top: 0;
+      padding-top: 37px;
+      padding-bottom: 9px;
     }
 
     &--checkbox {
@@ -525,7 +542,8 @@ button.main-form__btn {
 
     &--textarea {
       width: 940px;
-      padding-top: 44px;
+      padding-top: 42px;
+      padding-bottom: 40px;
     }
 
     &--button {
@@ -538,7 +556,7 @@ button.main-form__btn {
 
     &--username {
       width: 435px;
-      margin-bottom: 50px;
+      margin-bottom: 48px;
     }
 
     &--checkbox {
@@ -553,6 +571,7 @@ button.main-form__btn {
     &--contacts {
       padding-left: 0;
       margin-bottom: 4px;
+      margin-right: 130px;
     }
   }
 
@@ -564,21 +583,27 @@ button.main-form__btn {
     }
 
     &--contacts {
-      left: 340px;
+      left: 344px;
     }
 
     &--checkbox {
-      left: 252px;
+      left: 256px;
+    }
+
+    &--radio {
+      top: -9px;
+      left: 30px;
     }
 
     &--textarea {
-      left: 340px;
+      left: 351px;
     }
   }
 
   .main-form__content {
 
     &--checkbox {
+      width: 945px;
       height: 232px;
       display: flex;
       flex-direction: column;
@@ -603,9 +628,16 @@ button.main-form__btn {
     }
   }
 
+  .main-form__label {
+
+    &--hidden {
+      display: inline;
+    }
+  }
+
   .main-form__label--tel::after,
   .main-form__label--email::after {
-    left: 292px;
+    left: 296px;
   }
 
   .main-form__block--checkbox input[type="checkbox"] + label {

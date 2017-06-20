@@ -1,11 +1,9 @@
 .page-heading {
-  padding-top: 30px;
-  padding-bottom: 83px;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  background-size: cover;
+  padding-top: 31px;
+  padding-bottom: 85px;
 
   &--form {
-    padding-bottom: 53px;
+    padding-bottom: 58px;
   }
 }
 
@@ -25,11 +23,11 @@
 @media(min-width: 660px) {
 
   .page-heading {
-    padding-top: 30px;
-    padding-bottom: 141px;
+    padding-top: 72px;
+    padding-bottom: 143px;
 
     &--form {
-      padding-bottom: 82px;
+      padding-bottom: 86px;
     }
   }
 
@@ -47,8 +45,8 @@
 @media(min-width: 1200px) {
 
   .page-heading {
-    padding-top: 30px;
-    padding-bottom: 102px;
+    padding-top: 64px;
+    padding-bottom: 104px;
   }
 
   .page-heading--form h1 {

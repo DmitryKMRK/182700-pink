@@ -1,10 +1,14 @@
 .gallery__item {
   width: 280px;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
+
+  &--3 {
+    margin-bottom: 21px;
+  }
 }
 
 .gallery__item-featured {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .gallery__item-photo {
@@ -20,6 +24,8 @@
 
 .gallery__item-photo-featured img {
   width: 100%;
+  height: 137px;
+  object-fit: cover;
 }
 
 .gallery__item-description {
@@ -49,7 +55,9 @@
 }
 
 .gallery__post {
-  margin-bottom: 9px;
+  width: 280px;
+  margin-top: -2px;
+  margin-bottom: 8px;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
@@ -58,6 +66,7 @@
 .gallery__post-likes {
   display: flex;
   align-items: center;
+  margin-bottom: 1px;
 }
 
 .gallery__post-likes-icon {
@@ -85,6 +94,10 @@
     flex-direction: column;
   }
 
+  .gallery__item-photo-featured img {
+    height: 509px;
+  }
+
   .gallery__items-list .container {
     display: flex;
     flex-wrap: wrap;
@@ -93,6 +106,11 @@
 
   .gallery__item {
     width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .gallery__item-featured {
+    margin-bottom: 50px;
   }
 
   .gallery__item-photo {
@@ -111,6 +129,7 @@
     flex-direction: column;
     padding-top: 24px;
     padding-bottom: 23px;
+    padding-left: 28px;
     height: 155px;
 
     &--featured {
@@ -123,11 +142,13 @@
   }
 
   .gallery__post {
+    width: 232px;
     margin-top: 0;
     margin-bottom: 0;
 
     &--featured {
-      margin-top: -17px;
+      width: 520px;
+      margin-top: -25px;
     }
   }
 
@@ -139,8 +160,17 @@
 
     &--featured {
       width: 137px;
-      margin-top: 0;
+      margin-top: 1px;
+      margin-right: -7px;
       order: 2;
+    }
+  }
+
+  .gallery__post-likes-icon {
+    margin-right: 15px;
+
+    &--featured {
+      margin-right: 18px;
     }
   }
 
@@ -163,11 +193,15 @@
 @media(min-width: 1200px) {
 
   .gallery__item {
-    margin-bottom: 50px;
+    margin-bottom: 54px;
   }
 
   .gallery__item-featured {
     margin-bottom: 50px;
+  }
+
+  .gallery__item-photo-featured img {
+    height: 506px;
   }
 
   .gallery__item-photo {
@@ -186,6 +220,20 @@
     &--featured {
       height: 96px;
       padding-bottom: 4px;
+    }
+  }
+
+  .gallery__post {
+
+    &--featured {
+      width: 880px;
+    }
+  }
+
+  .gallery__post-likes {
+
+    &--featured {
+      margin-right: -2px;
     }
   }
 

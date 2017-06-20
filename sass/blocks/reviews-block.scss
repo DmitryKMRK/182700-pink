@@ -116,7 +116,7 @@
     height: 63px;
     position: absolute;
     top: -102px;
-    left: 425px;
+    left: 411px;
     background: url("../img/quotes.png") no-repeat;
   }
 
@@ -130,6 +130,10 @@
 
   .reviews-block__slider-description {
     width: 680px;
+  }
+
+  .reviews-block__slider-description-quotes {
+    display: none;
   }
 
 }
