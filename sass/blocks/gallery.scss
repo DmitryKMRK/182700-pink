@@ -38,6 +38,17 @@
     width: 100%;
     margin-top: -3px;
   }
+
+  &--featured::before {
+    content: "";
+    width: 140px;
+    height: 36px;
+    background: url("../img/photo-featured-label.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: -137px;
+  }
 }
 
 .gallery__post-author {
@@ -139,6 +150,10 @@
       padding-bottom: 0;
       height: 121px;
     }
+
+    &--featured::before {
+      top: -452px;
+    }
   }
 
   .gallery__post {
@@ -220,6 +235,10 @@
     &--featured {
       height: 96px;
       padding-bottom: 4px;
+    }
+
+    &--featured::before {
+      top: -452px;
     }
   }
 

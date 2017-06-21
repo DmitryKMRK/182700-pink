@@ -1,7 +1,7 @@
 .contacts-block {
   position: relative;
   padding-top: 43px;
-  padding-bottom: 39px;
+  padding-bottom: 33px;
   z-index: 4;
 }
 
@@ -125,8 +125,8 @@
 @media(min-width: 1200px) {
 
   .contacts-block {
-    padding-top: 63px;
-    padding-bottom: 22px;
+    padding-top: 64px;
+    padding-bottom: 23px;
   }
 
   .contacts-block__description {
@@ -140,6 +140,7 @@
 
     &--1 {
       order: 1;
+      margin-left: 31px;
     }
 
     &--2 {
@@ -154,6 +155,14 @@
 
   .contacts-block__item-content {
     margin-top: 26px;
+
+    &--address {
+      margin-right: 3px;
+    }
+
+    &--mail {
+      margin-top: 28px;
+    }
   }
 
 }
