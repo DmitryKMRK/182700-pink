@@ -343,13 +343,14 @@ button.main-form__btn {
 
     &--textarea {
       padding-top: 46px;
+      padding-bottom: 47px;
       margin-top: 65px;
       border: 2px solid #e5e5e5;
       order: 5;
     }
 
     &--button {
-      margin-top: 69px;
+      margin-top: 66px;
       order: 6;
     }
   }
@@ -362,43 +363,28 @@ button.main-form__btn {
   }
 
   .main-form__heading {
+    position: absolute;
+    top: -10px;
+    background: #ffffff;
+    padding-left: 31px;
+    padding-right: 31px;
 
     &--radio {
-      position: absolute;
-      top: -10px;
-      left: 124px;
-      background: #ffffff;
-      padding-left: 25px;
-      padding-right: 25px;
+      left: 119px;
     }
 
     &--contacts {
       display: block;
-      position: absolute;
-      top: -10px;
-      left: 183px;
-      background: #ffffff;
-      padding-left: 25px;
-      padding-right: 25px;
+      left: 178px;
     }
 
     &--checkbox {
-      position: absolute;
       width: 373px;
-      top: -10px;
-      left: 95px;
-      background: #ffffff;
-      padding-left: 25px;
-      padding-right: 25px;
+      left: 90px;
     }
 
     &--textarea {
-      position: absolute;
-      top: -10px;
-      left: 191px;
-      background: #ffffff;
-      padding-left: 25px;
-      padding-right: 25px;
+      left: 186px;
     }
   }
 
@@ -579,15 +565,17 @@ button.main-form__btn {
 
     &--radio {
       width: 320px;
-      left: 33px;
+      left: 34px;
+      padding-left: 25px;
+      padding-right: 25px;
     }
 
     &--contacts {
-      left: 344px;
+      left: 338px;
     }
 
     &--checkbox {
-      left: 256px;
+      left: 250px;
     }
 
     &--radio {
@@ -596,7 +584,9 @@ button.main-form__btn {
     }
 
     &--textarea {
-      left: 351px;
+      left: 339px;
+      padding-left: 37px;
+      padding-right: 38px;
     }
   }
 

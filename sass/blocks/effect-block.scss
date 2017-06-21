@@ -46,9 +46,21 @@
   }
 
   .effect-block__link {
+    position: relative;
     font-size: 14px;
     line-height: 24px;
     color: #d22856;
+    text-decoration: none;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #d22856;
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+    }
   }
 
 }
@@ -56,7 +68,7 @@
 @media(min-width: 1200px) {
 
   .effect-block {
-    padding-top: 31px;
+    padding-top: 33px;
     padding-bottom: 66px;
     background-color: #f2f2f2;
   }
@@ -80,7 +92,7 @@
 
   .effect-block__description {
     width: 530px;
-    margin-top: 25px;
+    margin-top: 23px;
     margin-bottom: 30px;
     font-size: 18px;
     line-height: 30px;

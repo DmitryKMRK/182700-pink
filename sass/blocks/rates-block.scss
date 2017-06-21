@@ -1,23 +1,30 @@
 .rates-block {
   position: relative;
-  padding-top: 66px;
+  padding-top: 93px;
   background-color: #f2f2f2;
   padding-bottom: 100px;
+  overflow: hidden;
 
   &::before {
     content: "";
     width: 100%;
-    height: 100px;
+    height: 33%;
     position: absolute;
     background: url("../img/bg-triangle-white.svg") no-repeat;
+    background-size: contain;
     top: 0;
-    right: 0;
   }
 }
 
 .rates-block__slider {
   height: 281px;
   position: relative;
+}
+
+.rates-block__slider .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .rates-block__table {
@@ -101,7 +108,7 @@
     position: absolute;
     right: 17px;
     top: 20px;
-    background: url("../img/yes.png") no-repeat;
+    background: url("../img/icon-yes.svg") no-repeat;
     background-size: 31px 21px;
   }
 
@@ -112,16 +119,26 @@
     position: absolute;
     right: 19px;
     top: 15px;
-    background: url("../img/no.png") no-repeat;
+    background: url("../img/icon-no.svg") no-repeat;
     background-size: 27px 26px;
   }
+}
 
+.rates-block__slider-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 321px;
+  margin-left: 15px;
+}
+
+.rates-block__slider-controls-item {
+  margin-right: 18px;
 }
 
 @media(min-width: 660px) {
 
   .rates-block {
-    padding-top: 88px;
+    padding-top: 90px;
     padding-bottom: 7px;
   }
 
@@ -138,8 +155,7 @@
     font-size: 0px;
 
     &:first-child {
-      display: block;
-      padding-top: 7px;
+      display: table-cell;
       font-size: 14px;
       line-height: 30px;
       text-transform: none;
@@ -162,7 +178,7 @@
     padding-bottom: 8px;
 
     &--hidden {
-      display: block;
+      display: table-cell;
     }
 
     &--hit {
@@ -187,12 +203,16 @@
     }
   }
 
+  .rates-block__slider-controls {
+    display: none;
+  }
+
 }
 
 @media(min-width: 1200px) {
 
   .rates-block {
-    padding-top: 149px;
+    padding-top: 167px;
     padding-bottom: 95px;
   }
 
@@ -203,6 +223,11 @@
   .rates-block__table-item {
     height: 61px;
     padding-left: 24px;
+
+    &:first-child {
+      padding-top: 2px;
+      font-size: 18px;
+    }
 
     &--yes::after {
       right: 101px;
