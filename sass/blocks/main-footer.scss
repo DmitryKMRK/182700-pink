@@ -135,6 +135,10 @@
     padding-top: 95px;
     padding-bottom: 73px;
 
+    &--index {
+      padding-top: 71px;
+    }
+
     &--form {
       padding-top: 20px;
     }
@@ -150,6 +154,10 @@
 
   .main-footer__social {
     margin-left: 36px;
+
+    &--index {
+      margin-left: 30px;
+    }
   }
 
   .main-footer__copyright {
