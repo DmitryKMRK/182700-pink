@@ -13,6 +13,26 @@ var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
 
+gulp.task("build", function(fn) {
+  run("clean", "copy", "style", "images", fn);
+});
+
+gulp.task("clean", function() {
+  return del("build");
+});
+
+gulp.task("copy", function() {
+  return gulp.src([
+    "fonts/**/*.{woff,woff2}",
+    "img/**",
+    "js/**",
+    "*.html"
+  ], {
+    base: "."
+  })
+  .pipe(gulp.dest("build"));
+});
+
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
     .pipe(plumber())
@@ -49,22 +69,6 @@ gulp.task("serve", function() {
     ui: false
   });
 
-  gulp.task("clean", function() {
-    return del("build");
-  });
-
-  gulp.task("copy", function() {
-    return gulp.src([
-      "fonts/**/*.{woff,woff2}",
-      "img/**",
-      "js/**",
-      "*.html"
-    ], {
-      base: "."
-    })
-    .pipe(gulp.dest("build"));
-  });
-
   gulp.task("html:copy", function() {
     return gulp.src("*.html")
     .pipe(gulp.dest("build"));
@@ -73,10 +77,6 @@ gulp.task("serve", function() {
   gulp.task("html:update", ["html:copy"], function(done) {
     server.reload();
     done();
-  });
-
-  gulp.task("build", function(fn) {
-    run("clean", "copy", "style", "images", fn);
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
