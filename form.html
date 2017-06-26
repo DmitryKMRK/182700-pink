@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк - Конкурс</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="format-detection" content="telephone=no">
+    <script src="../js/picturefill.js"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header header--form">
       <div class="header__top header__top--open">
         <div class="container">
           <div class="header__overlay">
@@ -81,7 +83,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="main main--form">
       <div class="page-intro page-intro--form">
         <div class="container">
           <p class="page-intro__description page-intro__description--form">
@@ -197,7 +199,7 @@
             <div class="main-form__content main-form__content--button">
               <div class="main-form__item main-form__item--button">
                 <button class="btn main-form__btn" type="submit">Отправить форму</button>
-                <span class="main-form__label main-form__label--button"><span class="main-form__label">*</span> &#8212; обязательные<span class="main-form__label--hidden"> для заполнения</span> поля</span>
+                <span class="main-form__label main-form__label--button"><span class="main-form__label">*</span> &#8212; обязательные<span class="main-form__label main-form__label--hidden"> для заполнения</span> поля</span>
               </div>
             </div>
           </div>
@@ -212,7 +214,7 @@
         </div>
         <div class="modal-form__button-block modal-form__button-block--post">
           <div class="container">
-            <a class="btn main-form__btn modal-form__btn" href="/">Закрыть окно</a>
+            <a class="btn modal-form__btn modal-form__btn--post" href="/">Закрыть окно</a>
           </div>
         </div>
       </div>
@@ -224,7 +226,7 @@
         </div>
         <div class="modal-form__button-block modal-form__button-block--error">
           <div class="container">
-            <a class="btn main-form__btn modal-form__btn" href="/">Ок</a>
+            <a class="btn modal-form__btn modal-form__btn--error" href="/">Ок</a>
           </div>
         </div>
       </div>

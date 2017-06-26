@@ -41,9 +41,7 @@ gulp.task("style", function() {
       autoprefixer({browsers: [
         "last 2 versions"
       ]}),
-      mqpacker({
-        sort: true
-      })
+      mqpacker()
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())

@@ -1,9 +1,21 @@
 .header {
   background-color: #283645;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center;
   background-repeat: no-repeat;
   background-size: 700px auto;
+  overflow: hidden;
+
+  &--index {
+    background-position: center bottom 270px;
+  }
+
+  &--form {
+    background-position: center top;
+  }
+
+  &--photo {
+    background-position: center top;
+  }
 
   @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -248,6 +260,10 @@
   .header {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: 1200px auto;
+
+    &--index {
+      background-position: center bottom;
+    }
 
     @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
