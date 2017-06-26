@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк - Фотографии</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="format-detection" content="telephone=no">
+    <script src="../js/picturefill.min.js"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header header--photo">
       <div class="header__top header__top--open">
         <div class="container">
           <div class="header__overlay">
@@ -93,11 +95,13 @@
       <div class="gallery">
         <div class="gallery__item-featured">
           <div class="gallery__item-photo-featured">
-            <picture>
-              <source media="(min-width:1200px)" srcset="../img/panorama-desktop@1x.jpg 1x, ../img/panorama-desktop@2x.jpg 2x">
-              <source media="(min-width:660px)" srcset="../img/panorama-tablet@1x.jpg 1x, ../img/panorama-tablet@2x.jpg 2x">
-              <img src="../img/panorama-mobile@1x.jpg" srcset="../img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
-            </picture>
+            <a href="photo-featured.html">
+              <picture>
+                <source media="(min-width:1200px)" srcset="../img/panorama-desktop@1x.jpg 1x, ../img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width:660px)" srcset="../img/panorama-tablet@1x.jpg 1x, ../img/panorama-tablet@2x.jpg 2x">
+                <img src="../img/panorama-mobile@1x.jpg" srcset="../img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+              </picture>
+            </a>
           </div>
           <div class="container">
             <div class="gallery__item-description gallery__item-description--featured">
@@ -118,11 +122,13 @@
           <div class="container">
             <div class="gallery__item gallery__item--1">
               <div class="gallery__item-photo">
-                <picture>
-                  <source media="(min-width:1200px)" srcset="../img/photo-1-desktop@1x.jpg 1x, ../img/photo-1-desktop@2x.jpg 2x">
-                  <source media="(min-width:660px)" srcset="../img/photo-1-tablet@1x.jpg 1x, ../img/photo-1-tablet@2x.jpg 2x">
-                  <img src="../img/photo-1-mobile@1x.jpg" srcset="../img/photo-1-mobile@2x.jpg.jpg 2x" alt="Фото 1">
-                </picture>
+                <a href="photo-1.html">
+                  <picture>
+                    <source media="(min-width:1200px)" srcset="../img/photo-1-desktop@1x.jpg 1x, ../img/photo-1-desktop@2x.jpg 2x">
+                    <source media="(min-width:660px)" srcset="../img/photo-1-tablet@1x.jpg 1x, ../img/photo-1-tablet@2x.jpg 2x">
+                    <img src="../img/photo-1-mobile@1x.jpg" srcset="../img/photo-1-mobile@2x.jpg.jpg 2x" alt="Фото 1">
+                  </picture>
+                </a>
               </div>
               <div class="gallery__item-description">
                 <div class="gallery__post-info">
@@ -139,11 +145,13 @@
 
             <div class="gallery__item gallery__item--2">
               <div class="gallery__item-photo">
-                <picture>
-                  <source media="(min-width:1200px)" srcset="../img/photo-2-desktop@1x.jpg 1x, ../img/photo-2-desktop@2x.jpg 2x">
-                  <source media="(min-width:660px)" srcset="../img/photo-2-tablet@1x.jpg 1x, ../img/photo-2-tablet@2x.jpg 2x">
-                  <img src="../img/photo-2-mobile@1x.jpg" srcset="../img/photo-2-mobile@2x.jpg.jpg 2x" alt="Фото 2">
-                </picture>
+                <a href="photo-2.html">
+                  <picture>
+                    <source media="(min-width:1200px)" srcset="../img/photo-2-desktop@1x.jpg 1x, ../img/photo-2-desktop@2x.jpg 2x">
+                    <source media="(min-width:660px)" srcset="../img/photo-2-tablet@1x.jpg 1x, ../img/photo-2-tablet@2x.jpg 2x">
+                    <img src="../img/photo-2-mobile@1x.jpg" srcset="../img/photo-2-mobile@2x.jpg.jpg 2x" alt="Фото 2">
+                  </picture>
+                </a>
               </div>
               <div class="gallery__item-description">
                 <div class="gallery__post-info">
@@ -160,11 +168,13 @@
 
             <div class="gallery__item gallery__item--3">
               <div class="gallery__item-photo">
-                <picture>
-                  <source media="(min-width:1200px)" srcset="../img/photo-3-desktop@1x.jpg 1x, ../img/photo-3-desktop@2x.jpg 2x">
-                  <source media="(min-width:660px)" srcset="../img/photo-3-tablet@1x.jpg 1x, ../img/photo-3-tablet@2x.jpg 2x">
-                  <img src="../img/photo-3-mobile@1x.jpg" srcset="../img/photo-3-mobile@2x.jpg.jpg 2x" alt="Фото 3">
-                </picture>
+                <a href="photo-3.html">
+                  <picture>
+                    <source media="(min-width:1200px)" srcset="../img/photo-3-desktop@1x.jpg 1x, ../img/photo-3-desktop@2x.jpg 2x">
+                    <source media="(min-width:660px)" srcset="../img/photo-3-tablet@1x.jpg 1x, ../img/photo-3-tablet@2x.jpg 2x">
+                    <img src="../img/photo-3-mobile@1x.jpg" srcset="../img/photo-3-mobile@2x.jpg.jpg 2x" alt="Фото 3">
+                  </picture>
+                </a>
               </div>
               <div class="gallery__item-description">
                 <div class="gallery__post-info">
@@ -181,11 +191,13 @@
 
             <div class="gallery__item gallery__item--4">
               <div class="gallery__item-photo">
-                <picture>
-                  <source media="(min-width:1200px)" srcset="../img/photo-4-desktop@1x.jpg 1x, ../img/photo-4-desktop@2x.jpg 2x">
-                  <source media="(min-width:660px)" srcset="../img/photo-4-tablet@1x.jpg 1x, ../img/photo-4-tablet@2x.jpg 2x">
-                  <img src="../img/photo-4-mobile@1x.jpg" srcset="../img/photo-4-mobile@2x.jpg.jpg 2x" alt="Фото 4">
-                </picture>
+                <a href="photo-4.html">
+                  <picture>
+                    <source media="(min-width:1200px)" srcset="../img/photo-4-desktop@1x.jpg 1x, ../img/photo-4-desktop@2x.jpg 2x">
+                    <source media="(min-width:660px)" srcset="../img/photo-4-tablet@1x.jpg 1x, ../img/photo-4-tablet@2x.jpg 2x">
+                    <img src="../img/photo-4-mobile@1x.jpg" srcset="../img/photo-4-mobile@2x.jpg.jpg 2x" alt="Фото 4">
+                  </picture>
+                </a>
               </div>
               <div class="gallery__item-description">
                 <div class="gallery__post-info">
@@ -202,11 +214,13 @@
 
             <div class="gallery__item gallery__item--5">
               <div class="gallery__item-photo">
-                <picture>
-                  <source media="(min-width:1200px)" srcset="../img/photo-5-desktop@1x.jpg 1x, ../img/photo-5-desktop@2x.jpg 2x">
-                  <source media="(min-width:660px)" srcset="../img/photo-5-tablet@1x.jpg 1x, ../img/photo-5-tablet@2x.jpg 2x">
-                  <img src="../img/photo-5-mobile@1x.jpg" srcset="../img/photo-5-mobile@2x.jpg.jpg 2x" alt="Фото 5">
-                </picture>
+                <a href="photo-5.html">
+                  <picture>
+                    <source media="(min-width:1200px)" srcset="../img/photo-5-desktop@1x.jpg 1x, ../img/photo-5-desktop@2x.jpg 2x">
+                    <source media="(min-width:660px)" srcset="../img/photo-5-tablet@1x.jpg 1x, ../img/photo-5-tablet@2x.jpg 2x">
+                    <img src="../img/photo-5-mobile@1x.jpg" srcset="../img/photo-5-mobile@2x.jpg.jpg 2x" alt="Фото 5">
+                  </picture>
+                </a>
               </div>
               <div class="gallery__item-description">
                 <div class="gallery__post-info">
@@ -223,11 +237,13 @@
 
             <div class="gallery__item gallery__item--6">
               <div class="gallery__item-photo">
-                <picture>
-                  <source media="(min-width:1200px)" srcset="../img/photo-6-desktop@1x.jpg 1x, ../img/photo-6-desktop@2x.jpg 2x">
-                  <source media="(min-width:660px)" srcset="../img/photo-6-tablet@1x.jpg 1x, ../img/photo-6-tablet@2x.jpg 2x">
-                  <img src="../img/photo-6-mobile@1x.jpg" srcset="../img/photo-6-mobile@2x.jpg.jpg 2x" alt="Фото 6">
-                </picture>
+                <a href="photo-6.html">
+                  <picture>
+                    <source media="(min-width:1200px)" srcset="../img/photo-6-desktop@1x.jpg 1x, ../img/photo-6-desktop@2x.jpg 2x">
+                    <source media="(min-width:660px)" srcset="../img/photo-6-tablet@1x.jpg 1x, ../img/photo-6-tablet@2x.jpg 2x">
+                    <img src="../img/photo-6-mobile@1x.jpg" srcset="../img/photo-6-mobile@2x.jpg.jpg 2x" alt="Фото 6">
+                  </picture>
+                </a>
               </div>
               <div class="gallery__item-description">
                 <div class="gallery__post-info">
@@ -254,51 +270,51 @@
         </div>
       </div>
 
-      <div class="color-settings-block__container">
-        <div class="color-settings-block">
-          <div class="container">
-            <div class="color-settings-block__content">
-              <div class="color-settings-block__img">
+      <div class="color-settings-block">
+        <div class="container">
+          <div class="color-settings-block__content">
+            <div class="color-settings-block__img">
+              <a href="photo-7.html">
                 <picture>
                   <source media="(min-width:1200px)" srcset="../img/photo-7-desktop@1x.jpg 1x, ../img/photo-7-desktop@2x.jpg 2x">
                   <source media="(min-width:660px)" srcset="../img/photo-7-tablet@1x.jpg 1x, ../img/photo-7-tablet@2x.jpg 2x">
                   <img src="../img/photo-7-mobile@1x.jpg" srcset="../img/photo-7-mobile@2x.jpg.jpg 2x" alt="Фото 7">
                 </picture>
+              </a>
+            </div>
+
+            <div class="color-settings-block__controls">
+              <div class="color-settings-block__list">
+                <div class="color-settings-block__item color-settings-block__item--size">
+                  <div class="color-settings-block__icon color-settings-block__icon--size"></div>
+                  <div class="color-settings-block__item-range color-settings-block__item-range--size">
+                    <div class="color-settings-block__scale"></div>
+                    <div class="color-settings-block__toggle color-settings-block__toggle--size"></div>
+                  </div>
+                </div>
+                <div class="color-settings-block__item color-settings-block__item--color">
+                  <div class="color-settings-block__icon color-settings-block__icon--color"></div>
+                  <div class="color-settings-block__item-range color-settings-block__item-range--color">
+                    <div class="color-settings-block__scale"></div>
+                    <div class="color-settings-block__toggle color-settings-block__toggle--color"></div>
+                  </div>
+                </div>
+                <div class="color-settings-block__item color-settings-block__item--contrast">
+                  <div class="color-settings-block__icon color-settings-block__icon--contrast"></div>
+                  <div class="color-settings-block__item-range color-settings-block__item-range--contrast">
+                    <div class="color-settings-block__scale"></div>
+                    <div class="color-settings-block__toggle color-settings-block__toggle--contrast"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="color-settings-block__range color-settings-block__range--mobile">
+                <div class="color-settings-block__scale color-settings-block__scale--mobile"></div>
+                <div class="color-settings-block__toggle color-settings-block__toggle--mobile"></div>
               </div>
 
-              <div class="color-settings-block__controls">
-                <div class="color-settings-block__list">
-                  <div class="color-settings-block__item color-settings-block__item--size">
-                    <div class="color-settings-block__icon color-settings-block__icon--size"></div>
-                    <div class="color-settings-block__item-range color-settings-block__item-range--size">
-                      <div class="color-settings-block__scale"></div>
-                      <div class="color-settings-block__toggle color-settings-block__toggle--size"></div>
-                    </div>
-                  </div>
-                  <div class="color-settings-block__item color-settings-block__item--color">
-                    <div class="color-settings-block__icon color-settings-block__icon--color"></div>
-                    <div class="color-settings-block__item-range color-settings-block__item-range--color">
-                      <div class="color-settings-block__scale"></div>
-                      <div class="color-settings-block__toggle color-settings-block__toggle--color"></div>
-                    </div>
-                  </div>
-                  <div class="color-settings-block__item color-settings-block__item--contrast">
-                    <div class="color-settings-block__icon color-settings-block__icon--contrast"></div>
-                    <div class="color-settings-block__item-range color-settings-block__item-range--contrast">
-                      <div class="color-settings-block__scale"></div>
-                      <div class="color-settings-block__toggle color-settings-block__toggle--contrast"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="color-settings-block__range color-settings-block__range--mobile">
-                  <div class="color-settings-block__scale color-settings-block__scale--mobile"></div>
-                  <div class="color-settings-block__toggle color-settings-block__toggle--mobile"></div>
-                </div>
-
-                <div class="color-settings-block__buttons">
-                    <a class="btn color-settings-block__btn color-settings-block__btn--active" href="">Запостить</a>
-                    <a class="btn color-settings-block__btn color-settings-block__btn--inactive" href="">Отмена</a>
-                </div>
+              <div class="color-settings-block__buttons">
+                  <a class="btn color-settings-block__btn color-settings-block__btn--active" href="">Запостить</a>
+                  <a class="btn color-settings-block__btn color-settings-block__btn--inactive" href="">Отмена</a>
               </div>
             </div>
           </div>

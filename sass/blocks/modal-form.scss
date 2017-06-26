@@ -57,6 +57,34 @@
 
 .modal-form__btn {
   margin: 0 auto;
+  width: 280px;
+  height: 63px;
+  margin-bottom: 35px;
+  padding-top: 16px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #2aab6d;
+  border-radius: 2px;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+button.modal-form__btn {
+  border: none;
+  padding-top: 1px;
 }
 
 @media (min-width: 660px) {
@@ -101,6 +129,11 @@
   }
 }
 
+.modal-form__btn {
+  width: 300px;
+  margin-bottom: 0;
+}
+
 @media (min-width: 1200px) {
 
   .modal-form {
@@ -133,6 +166,13 @@
     &--post {
       margin-top: 37px;
       padding-top: 49px;
+    }
+  }
+
+  .modal-form__btn {
+
+    &--post {
+      width: 460px;
     }
   }
 
