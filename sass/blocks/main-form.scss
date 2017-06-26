@@ -65,6 +65,10 @@
   }
 }
 
+.main-form__block--checkbox .container {
+  padding-top: 5px;
+}
+
 .main-form__heading {
   @include form-heading-font;
   margin: 0 auto;
@@ -183,6 +187,7 @@
   }
 
   &--hidden {
+    color: #283645;
     display: none;
   }
 }
@@ -318,7 +323,7 @@ button.main-form__btn {
 
     &--checkbox {
       height: 553px;
-      padding-top: 57px;
+      padding-top: 52px;
       margin-top: 65px;
       background-color: #ffffff;
       border: 2px solid #e5e5e5;

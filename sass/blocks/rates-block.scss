@@ -30,7 +30,7 @@
 .rates-block__table {
   width: 836px;
   margin: 0 auto;
-  border-collapse: collapse;
+  border: 2px solid #f2f2f2;
   position: absolute;
   top: 0;
   left: 50%;
@@ -53,8 +53,6 @@
 
   &--hit {
     position: relative;
-    border-left: 2px solid #e5e5e5;
-    border-right: 2px solid #e5e5e5;
   }
 
   &--hit::after {
@@ -90,7 +88,7 @@
   width: 33.33333%;
   height: 61px;
   padding-left: 20px;
-  border: 2px solid #e5e5e5;
+  border: none;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -179,11 +177,6 @@
 
     &--hidden {
       display: table-cell;
-    }
-
-    &--hit {
-      border-left: 2px solid #e5e5e5;
-      border-right: 2px solid #e5e5e5;
     }
 
     &--hit::after {
